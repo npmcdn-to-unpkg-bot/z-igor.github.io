@@ -6,6 +6,12 @@
     width: 5px;
     background: #616777;
 }
+
+.mi::-moz-scrollbar {
+    width: 5px;
+    background: #616777;
+}
+
 .mi::-webkit-scrollbar-button {
     /*height: 5px; */
     /*width: 5px;*/
@@ -14,6 +20,11 @@
 /*.mi::-webkit-scrollbar-track-piece  { }*/
 
 .mi::-webkit-scrollbar-thumb { 
+    background: #181D2B;
+    /*border-radius: 20px;*/
+}
+
+.mi::-moz-scrollbar-thumb { 
     background: #181D2B;
     /*border-radius: 20px;*/
 }
