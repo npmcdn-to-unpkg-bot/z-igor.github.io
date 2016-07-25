@@ -36,7 +36,7 @@ body {
     background: #252830;
 }
 
-header h1,
+/*header h1,*/
 div h1 {
     font: 4em PT sans, sans-serif;
     font-weight: 100;
@@ -50,7 +50,7 @@ div h1 {
     /*text-shadow: 0px 0px 4px yellow;*/
 }
 
-header h1 span,
+/*header h1 span,*/
 div h1 span {
     position: absolute;
     /*content: "бета";*/
