@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	font: 12pt Calibri;
+}
+
+div {
+	overflow: hidden;
+}
+
+.lorem {
+  margin: 5px;
+}
+
+.frst, .scnd, .thrd {
+  width: 100%;
+  height: 550px;
+}
+
+.frst {
+	background: url(img/northern_lights.jpg) no-repeat;
+	background-size: 100%;
+	background-attachment:fixed;
+}
+
+.scnd {
+	background: url(img/spheres.png) no-repeat;
+	background-size: 100%;
+	background-attachment:fixed;
+	text-align: center
+}
+
+.one, .three {
+	width: 200px;
+	/*filter: -webkit-blur(2px);*/
+	/*filter: -moz-blur(2px);*/
+	/*filter: -o-blur(2px);*/
+	/*filter: blur(2px);*/
+	-ms-filter: blur(2px);
+	-moz-filter: blur(2px);
+	-webkit-filter: blur(2px);
+	filter: blur(2px);
+	margin: 0 -5px 30% -5px;
+}
+
+.two {
+	width: 380px;
+	margin-top: 25%;
+}
+
+.thrd {
+  background: url(img/eagle.jpg) repeat-y;
+   background-size: 100%;
+  background-attachment:fixed;
+}
+
+.wrapper {
+	background: url(img/forest.jpg) repeat-y;
+	background-attachment: fixed;
+	background-size: 100%;	
+	height: 30pc;
+	text-align: center;
+	padding: 10pc 0;
+}
+
+/*.wrapper * {
+	border: 1px solid
+}*/
+
+.grid {
+	width: 280px;
+	position: relative;
+	top: 25%;
+	display: inline-block;
+	opacity: 0;
+	transform: translateX(20px);
+	transition: all .3s ease-in-out;
+	margin-right: 10px;
+	overflow: hidden;
+}
+
+.wrapper img {
+	width: 280px;
+	display: block;
+	transition: all .2s ease-in-out;
+	transform: scale(1);
+}
+
+figcaption {
+	position: absolute;	bottom: 10px; left: -100%;
+	background: #fff;
+	color: #000;
+	padding: 2px 20px;
+	font-size: 12px;
+	transition: all .3s ease-in-out;
+}
+
+.wrapper img:hover + figcaption {
+	left: 0%;
+} 
+
+.wrapper img:hover {
+	transform: scale(1.2);
+} 
+
+.is-showing {
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+.words {
+	position: relative;
+	height: 1000px;
+}
+
+.around_window {
+	height: 460px;
+	position: relative;
+	width: 460px;
+	border-radius: 100%; 
+	background: url(img/museum.jpg) repeat-y;
+	background-attachment: fixed;	
+	transform: scale(1);
+	background-size: 35%;
+	background-position: center 0px;
+	margin: 69px auto;	
+	/*transition:all .3s ease-out 0s*/
+}
+
+/*.around_window:hover {
+	box-shadow: 2px 2px 1px 1px #000,
+				4px 4px 1px 1px #fff,
+				6px 4px 1px 1px #000,
+				8px 8px 1px 1px #fff,
+				10px 10px 1px 1px #000,
+				12px 12px 1px 1px #fff,
+				14px 14px 1px 1px #000;
+}*/
+
+.under_eagle {
+	position: absolute;
+	top: 20pc;
+	font: 50pt Calibri;
+	margin-top: -0.625em;
+	text-shadow: 5px 5px 2px grey;
+	font-weight: bolder; 
+	padding: 0 30px;
+}
+
+.under_eagle:last-child{
+	right: 0;
+	text-shadow: -5px 5px 2px grey
+}
+
+.window-tint {
+	background: rgba(0,0,0,.7);
+	position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+	display: flex;
+	-moz-justify-content: center;
+	justify-content: center;
+	-moz-align-items: center;
+	align-items: center;
+	text-align: center;
+}
+
+.promo-text {
+	color: #fff;
+	font-size: 40px;
+	line-height: 1.5;
+	padding: 20px;
+}
+
+.promo-text strong {
+	display: block;
+	font-size: 20px;
+	font-style: italic;
+	color: rgba(255,255,255,.6);
+}
+
+.window-cta {
+	color: #fff;
+	border: 1px solid #fff;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px 20px;
+	transition: all 0.3s ease-in-out;
+}
+
+.window-cta:hover {
+	background: #fff;
+	color: #000; 
+}	
